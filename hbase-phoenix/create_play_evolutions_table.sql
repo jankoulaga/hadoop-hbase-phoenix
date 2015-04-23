@@ -1,0 +1,1 @@
+create table IF NOT EXISTS play_evolutions (id integer not null, hash varchar(255) not null,applied_at timestamp not null,apply_script varchar(8000),revert_script varchar(8000),state varchar(8000),last_problem varchar(8000) CONSTRAINT id_pk PRIMARY KEY (id,hash,applied_at));
