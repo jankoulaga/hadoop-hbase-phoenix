@@ -21,7 +21,7 @@ You should be connected to hbase via `org.apache.phoenix.jdbc.PhoenixDriver`.
 To get the connection from your host i'm using the following setup:
 - run `boot2docker start`
 - run `boot2docker ip`
-- add the ip returned by boot2docker to `/etc/hosts`
+- add the ip returned by boot2docker to `/etc/hosts` poiting to hbase-phoenix
 - if you have a Phoenix library locally go to it and try to access it simply by executing `./sqlline.py hbase-phoenix:2181` 
 
 Should work like a charm :)
