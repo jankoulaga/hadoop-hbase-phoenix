@@ -93,8 +93,8 @@ CMD echo "Hadoop portion of the image DONE"
 # Hbase, zookeeper & phoenix
 CMD echo "Getting and setting up hbase"
 # hbase
-RUN curl -s https://www.apache.org/dist/hbase/hbase-0.98.12/hbase-0.98.12-hadoop2-bin.tar.gz | tar -xz -C /usr/local/
-RUN cd /usr/local && ln -s ./hbase-0.98.12-hadoop2 hbase
+RUN curl -s https://www.apache.org/dist/hbase/0.98.15/hbase-0.98.15-hadoop2-bin.tar.gz | tar -xz -C /usr/local/
+RUN cd /usr/local && ln -s ./hbase-0.98.15-hadoop2 hbase
 ENV HBASE_HOME /usr/local/hbase
 ENV PATH $PATH:$HBASE_HOME/bin
 RUN rm $HBASE_HOME/conf/hbase-site.xml
